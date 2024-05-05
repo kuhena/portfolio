@@ -377,6 +377,7 @@
           align-items:flex-start;
           @include sp{
             display:block;
+            text-align:center;
           }
           .pc{
             width:59.0rem;
@@ -387,8 +388,7 @@
           .sp{
             width:39rem;
             @include sp{
-              margin-left:15%;
-              width:80%;
+              width:70%;
             }
           }
         }

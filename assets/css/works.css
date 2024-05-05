@@ -1168,7 +1168,7 @@ header nav ul li:nth-child(4) a::before {
 }
 @media only screen and (max-width: 768px) {
   .contact {
-    padding: 6rem 2rem 0;
+    padding: 4.8rem 2rem 0;
     aspect-ratio: 390/844;
     background: url(../images/contact_bg_sp.jpg);
     background-repeat: no-repeat;
@@ -1811,6 +1811,7 @@ header nav ul li:nth-child(4) a::before {
 @media only screen and (max-width: 768px) {
   .works--detail--detail .img--web-site {
     display: block;
+    text-align: center;
   }
 }
 .works--detail--detail .img--web-site .pc {
@@ -1826,8 +1827,7 @@ header nav ul li:nth-child(4) a::before {
 }
 @media only screen and (max-width: 768px) {
   .works--detail--detail .img--web-site .sp {
-    margin-left: 15%;
-    width: 80%;
+    width: 70%;
   }
 }
 .works--detail--detail .img--row01 {
