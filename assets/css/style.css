@@ -22,9 +22,9 @@ html {
     font-size: 2.5641025641vw;
   }
 }
-@media only screen and (min-width: 1640px) {
+@media only screen and (min-width: 2504px) {
   html {
-    font-size: 62.5%;
+    font-size: 100%;
   }
 }
 
@@ -35,6 +35,11 @@ body {
 main {
   width: 100%;
   flex: 1;
+}
+@media only screen and (min-width: 2504px) {
+  main {
+    max-width: 2304px;
+  }
 }
 main section {
   width: 100%;
@@ -47,16 +52,16 @@ main section {
   display: flex;
   flex-direction: column;
 }
-@media only screen and (min-width: 1640px) {
+@media only screen and (min-width: 2504px) {
   #wrap {
-    max-width: 1440px;
+    max-width: 2304px;
   }
 }
 
 .pc-only {
   display: none;
 }
-@media only screen and (min-width: 1640px) {
+@media only screen and (min-width: 2504px) {
   .pc-only {
     display: block;
   }
@@ -113,7 +118,7 @@ main section {
     transform: rotateX(-30deg) rotateY(-30deg);
   }
 }
-@media only screen and (min-width: 1640px) {
+@media only screen and (min-width: 2504px) {
   #trigger + label {
     display: none;
   }
@@ -135,7 +140,7 @@ main section {
   right: 0;
   z-index: -1;
 }
-@media only screen and (min-width: 1640px) {
+@media only screen and (min-width: 2504px) {
   #trigger + label + nav {
     display: none;
   }
@@ -398,10 +403,10 @@ header nav ul li:nth-child(4) a::before {
   }
 }
 
-@media only screen and (min-width: 1640px) {
+@media only screen and (min-width: 2504px) {
   .pc-nav {
     padding: 4rem 0;
-    width: calc(100% - 1440px);
+    width: calc(100% - 2304px);
     height: 100%;
     background: #fff;
     display: flex;
