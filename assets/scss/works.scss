@@ -1,0 +1,426 @@
+
+/* Scss Document */
+
+@charset "UTF-8";
+
+/* CSS Document */
+@import "style.scss";
+
+.wrap{
+  &--works{
+    background:#FFFFF7;
+    .hamburger_bg{
+      width:16.0rem;
+      height:16.0rem;
+      border-radius:50%;
+      background:#D3CAB5;
+      position:fixed;
+      z-index:998;
+      top:-4.6rem;
+      right:-5.6rem;
+      opacity:1;
+      transition:200ms;
+      @include pc{
+        display:none;
+      }
+      @include sp{
+        right:-7.2rem;
+      }
+    }
+    #trigger:checked + label + nav + .hamburger_bg{
+      opacity:0;
+      @include pc{
+        display:none;
+      }
+    }
+    .back-btn{
+      @include flex-column;
+      position:fixed;
+      bottom:2.4rem;
+      left:2.4rem;
+      transition:300ms;
+      z-index:99;
+      @include pc{
+        left:calc(100% - 144rem + 2.4rem);
+      }
+      @include sp{
+        bottom:1.2rem;
+        left:1.2rem;
+      }
+      figure{
+        width:9.6rem;
+        transition:300ms;
+        @include sp{
+          width:7.2rem;
+        }
+        img{
+          width:100%;
+        }
+      }
+      p{
+        margin-top:0.4rem;
+        padding-left:1.2rem;
+        font-size:1.4rem;
+        font-weight:700;
+        color:#3B3931;
+        position:relative;
+        @include sp{
+          font-size:1.2rem;
+        }
+        &::before{
+          content:"";
+          width:0;
+          height:0;
+          border-style:solid;
+          border-width: 0.3rem 0.5rem 0.3rem 0;
+          border-color: transparent #3B3931 transparent transparent;
+          position:absolute;
+          top:50%;
+          left:0;
+          transform:translateY(-50%);
+        }
+      }
+      &:hover{
+        opacity:0.7;
+        figure{
+          transform: rotate(-4deg);
+        }
+      }
+    }
+  }
+}
+.works{
+  &--fv{
+    width:100%;
+    height:46.0rem;
+    background:url(../images/works/fv_bg.jpg);
+    @include bg-cover;
+    position:relative;
+    @include sp{
+      padding:0 4.0rem;
+      height:20.0rem;
+      @include flex-column;
+      background:url(../images/works/fv_bg_sp.jpg);
+      @include bg-cover;
+    }
+    &--window{
+      width:60.0rem;
+      background:#fff;
+      border-radius:0.8rem;
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+      box-shadow:0.4rem 0.4rem 0.8rem rgba(0,0,0,0.12);
+      @include sp{
+        width:100%;
+        position:static;
+        transform:none;
+      }
+      &--head{
+        width:100%;
+        height:3.4rem;
+        background:#616161;
+        position:relative;
+        border-radius:0.8rem 0.8rem 0 0;
+        @include sp{
+          height:2.0rem;
+        }
+        &--btn{
+          width:1.6rem;
+          height:1.6rem;
+          cursor:pointer;
+          position:absolute;
+          top:50%;
+          right:1.0rem;
+          transform:translateY(-50%);
+          @include sp{
+            width:1.4rem;
+            height:1.4rem;
+          }
+          &::before,&::after{
+            content:"";
+            width:0.1rem;
+            height:1.4rem;
+            background:#fff;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translateX(-50%) translateY(-50%) rotate(45deg);
+            @include sp{
+              height:1.2rem;
+            }
+          }
+          &::after{
+            transform:translateX(-50%) translateY(-50%) rotate(-45deg);
+          }
+          + .baloon{
+            padding:0 1.6rem;
+            background:#B6D7D1;
+            border-radius:99rem;
+            position:absolute;
+            bottom:calc(100% + 0.3rem);
+            right:-2.3rem;
+            opacity:0;
+            &::after{
+              content:"";
+              width:0;
+              height:0;
+              border-style:solid;
+              border-width: 0.6rem 0.4rem 0 0.4rem;
+              border-color: #B6D7D1 transparent transparent transparent;
+              position:absolute;
+              top:100%;
+              left:50%;
+              transform:translateX(-50%);
+            }
+            p{
+              @include josefin;
+              font-size:1.6rem;
+              line-height:3.2rem;
+              color:#3B3931;
+            }
+          }
+          &.animate{
+            + .baloon{
+              opacity:1;
+              animation: baloonanimation ease-in-out 500ms forwards;
+            }
+          }
+        }
+      }
+      &--body{
+        padding:4.0rem 0 6.0rem;
+        text-align:center;
+        @include sp{
+          padding:2.0rem 0 3.0rem;
+        }
+        h2{
+          @include roboto;
+          font-size:4.8rem;
+          line-height:1.3;
+          color:#5297AC;
+          @include sp{
+            font-size:2.4rem;
+          }
+        }
+        p{
+          margin-top:1.2rem;
+          font-size:2.0rem;
+          font-weight:700;
+          color:#3B3930;
+          @include sp{
+            margin-top:0.4rem;
+            font-size:1.6rem;
+          }
+        }
+      }
+    }
+  }
+  &--works{
+    padding:2.0rem 0 10.0rem;
+    @include sp{
+      padding:4.0rem 2.0rem;
+      height:calc(100vh - 20rem);
+    }
+    &--list{
+      margin:0 auto;
+      width:100.0rem;
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:space-between;
+      @include sp{
+        padding-bottom:2.8rem;
+        width:100%;
+        height:100%;
+        display:block;
+        overflow:auto;
+      }
+      &--item{
+        margin-top:8.0rem;
+        width:calc(50% - 4.0rem);
+        @include sp{
+          margin-top:0;
+          width:100%;
+        }
+        .thumbnail{
+          width:100%;
+          border:0.1rem solid #D9D9D9;
+          overflow:hidden;
+          img{
+            width:100%;
+            transition:300ms;
+          }
+        }
+        .name{
+          margin-top:1.2rem;
+          font-size:2.4rem;
+          font-weight:700;
+          line-height:1.5;
+          color:#5297AC;
+          @include sp{
+            margin-top:0.8rem;
+            font-size:2.0rem;
+          }
+        }
+        .detail{
+          margin-top:0.8rem;
+          @include josefin;
+          font-size:2.0rem;
+          color:#3B3930;
+          @include sp{
+            margin-top:0.4rem;
+            font-size:1.4rem;
+          }
+        }
+        a{
+          &:hover{
+            .thumbnail{
+              img{
+                transform:scale(1.1);
+              }
+            }
+          }
+        }
+        + li{
+          @include sp{
+            margin-top:3.2rem;
+          }
+        }
+      }
+    }
+  }
+  /*------------------------------制作事例 詳細------------------------------*/
+  &--detail{
+    &--fv{
+      width:100%;
+      img{
+        width:100%;
+      }
+    }
+    &--detail{
+      @include sp{
+        padding:4.0rem 2.0rem 6.0rem;
+        height:calc(100vh - 12.7rem);
+      }
+      &--wrap{
+        margin:0 auto;
+        padding:12.0rem 10.0rem;
+        width:120.0rem;
+        @include sp{
+          padding:0 0 2.0rem;
+          width:100%;
+          height:100%;
+          overflow:auto;
+          scrollbar-width: none;
+        }
+        &::-webkit-scrollbar{
+          @include sp{
+            display:none;
+          }
+        }
+      }
+      h2{
+        font-size:3.2rem;
+        font-weight:700;
+        color:#5297AC;
+        @include sp{
+          font-size:2.0rem;
+        }
+      }
+      .detail{
+        margin-top:1.6rem;
+        @include josefin;
+        font-size:2.0rem;
+        color:#3B3930;
+        @include sp{
+          margin-top:1.2rem;
+          font-size:1.4rem;
+        }
+      }
+      h3{
+        margin-top:3.6rem;
+        font-size:2.0rem;
+        font-weight:700;
+        color:#5297AC;
+        @include sp{
+          margin-top:2.4rem;
+          font-size:1.8rem;
+        }
+      }
+      .txt{
+        margin-top:2.0rem;
+        font-size:1.6rem;
+        line-height:1.6;
+        text-align:justify;
+        color:#333;
+        @include sp{
+          margin-top:1.6rem;
+          font-size:1.4rem;
+        }
+      }
+      .img{
+        margin-top:1.6rem;
+        width:100%;
+        img{
+          width:100%;
+          border:0.1rem solid #D9D9D9;
+          + img{
+            @include sp{
+              margin-top:1.6rem;
+            }
+          }
+        }
+        &--web-site{
+          display:flex;
+          justify-content:space-between;
+          align-items:flex-start;
+          @include sp{
+            display:block;
+          }
+          .pc{
+            width:59.0rem;
+            @include sp{
+              width:80%;
+            }
+          }
+          .sp{
+            width:39rem;
+            @include sp{
+              margin-left:15%;
+              width:80%;
+            }
+          }
+        }
+        &--row01{
+          text-align:center;
+          img{
+            width:80%;
+            + img{
+              margin-top:2.0rem;
+            }
+          }
+        }
+        &--row02{
+          margin-top:0.4rem;
+          display:flex;
+          justify-content:space-between;
+          flex-wrap:wrap;
+          @include sp{
+            margin-top:0;
+            display:block;
+            text-align:center;
+          }
+          img{
+            margin-top:2.0rem;
+            width:calc(50% - 1.0rem);
+            @include sp{
+              margin-top:1.6rem;
+              width:80%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
