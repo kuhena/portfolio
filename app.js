@@ -15,6 +15,4 @@ const app = protect(
   }
 )
 
-console.log('this is out')
-
 module.exports = app
