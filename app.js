@@ -8,7 +8,7 @@ const app = protect(
   '/',
   (username, password) => safeCompare(username, USER_NAME) && safeCompare(password, PASSWORD),
   {
-    directory: `${__dirname}`, // dist 配下のファイルを静的コンテンツとして配信する
+    directory: `${__dirname}/public`, // dist 配下のファイルを静的コンテンツとして配信する
     onAuthFailed: (res) => {
       res.end('Authentication failed')
     },
