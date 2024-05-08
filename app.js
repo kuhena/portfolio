@@ -15,4 +15,5 @@ const app = protect(
   }
 )
 
+console.log('test')
 module.exports = app
