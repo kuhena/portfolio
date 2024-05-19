@@ -1,5 +1,6 @@
 new Splide(".splide", {
   type: "fade", // フェード
+  drag: false,
 }).mount();
 
 $('.submit-btn--deco').click(() => {

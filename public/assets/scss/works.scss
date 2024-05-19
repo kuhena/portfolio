@@ -36,12 +36,12 @@
     .back-btn{
       @include flex-column;
       position:fixed;
-      bottom:2.4rem;
-      left:2.4rem;
+      bottom:5.6em;
+      left:4.4rem;
       transition:300ms;
       z-index:99;
       @include pc{
-        left:calc(100% - 144rem + 2.4rem);
+        left:calc(100% - 144rem + 4.4rem);
       }
       @include sp{
         bottom:1.2rem;
@@ -292,6 +292,7 @@
   }
   /*------------------------------制作事例 詳細------------------------------*/
   &--detail{
+
     &--fv{
       width:100%;
       img{
@@ -299,8 +300,9 @@
       }
     }
     &--detail{
+      background:#FFFFF7;
       @include sp{
-        padding:4.0rem 2.0rem 6.0rem;
+        padding:4.0rem 2.0rem 8.0rem;
         height:calc(100vh - 12.7rem);
       }
       &--wrap{
@@ -327,6 +329,9 @@
         @include sp{
           font-size:2.0rem;
         }
+      }
+      figure + h2{
+        margin-top:8.0rem;
       }
       .detail{
         margin-top:1.6rem;
@@ -411,7 +416,8 @@
             display:block;
             text-align:center;
           }
-          img{
+          a{
+            display:block;
             margin-top:2.0rem;
             width:calc(50% - 1.0rem);
             @include sp{

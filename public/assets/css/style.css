@@ -22,7 +22,7 @@ html {
     font-size: 2.5641025641vw;
   }
 }
-@media only screen and (min-width: 2504px) {
+@media only screen and (min-width: 2604px) {
   html {
     font-size: 100%;
   }
@@ -36,7 +36,7 @@ main {
   width: 100%;
   flex: 1;
 }
-@media only screen and (min-width: 2504px) {
+@media only screen and (min-width: 2604px) {
   main {
     max-width: 2304px;
   }
@@ -52,7 +52,7 @@ main section {
   display: flex;
   flex-direction: column;
 }
-@media only screen and (min-width: 2504px) {
+@media only screen and (min-width: 2604px) {
   #wrap {
     max-width: 2304px;
   }
@@ -61,7 +61,7 @@ main section {
 .pc-only {
   display: none;
 }
-@media only screen and (min-width: 2504px) {
+@media only screen and (min-width: 2604px) {
   .pc-only {
     display: block;
   }
@@ -118,7 +118,7 @@ main section {
     transform: rotateX(-30deg) rotateY(-30deg);
   }
 }
-@media only screen and (min-width: 2504px) {
+@media only screen and (min-width: 2604px) {
   #trigger + label {
     display: none;
   }
@@ -140,7 +140,7 @@ main section {
   right: 0;
   z-index: -1;
 }
-@media only screen and (min-width: 2504px) {
+@media only screen and (min-width: 2604px) {
   #trigger + label + nav {
     display: none;
   }
@@ -403,7 +403,7 @@ header nav ul li:nth-child(4) a::before {
   }
 }
 
-@media only screen and (min-width: 2504px) {
+@media only screen and (min-width: 2604px) {
   .pc-nav {
     padding: 4rem 0;
     width: calc(100% - 2304px);

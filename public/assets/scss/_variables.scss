@@ -1,7 +1,7 @@
 $color-black:#33302C;
 
 //PC最小幅とSP最大幅を変数に入れる
-$media-pc: 2504px;
+$media-pc: 2604px;
 $media-sp: 768px;
 
 //スタイルだけでなくメディアクエリの処理ごと@includeで渡したいので中身に@contentをつけておく

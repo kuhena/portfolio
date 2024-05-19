@@ -1,8 +1,8 @@
 const protect = require('static-auth');
 const safeCompare = require('safe-compare');
 
-const USER_NAME = process.env.USER_NAME || 'admin';
-const PASSWORD = process.env.PASSWORD || 'pass';
+const USER_NAME = process.env.USER_NAME || 'viewer';
+const PASSWORD = process.env.PASSWORD || 'gJ9vbUx4';
 
 const app = protect(
   '/',
