@@ -1,0 +1,137 @@
+.noto-sans-jp-font {
+  font-family: YakuHanJP, "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-font {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+html {
+  font-family: "Roboto", "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  font-size: 2.5641025641vw;
+  color: #453D31;
+  background: #F4F4F2;
+  line-height: 1.5;
+  -webkit-font-smoothing: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+@media screen and (min-width: 500px) {
+  html {
+    font-size: 12.8205128205px;
+  }
+}
+
+a {
+  display: block;
+}
+
+img {
+  width: 100%;
+}
+
+h2, h3 {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+@media screen and (min-width: 500px) {
+  .wrap {
+    box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.12);
+  }
+}
+.wrap body {
+  flex: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  flex: 1;
+  position: relative;
+}
+
+.to_top {
+  padding: 2.4rem 2rem;
+}
+.to_top img {
+  width: 3.5rem;
+}
+
+.schedule .list {
+  display: flex;
+}
+
+.schedule_conts {
+  padding-bottom: 3.2rem;
+}
+
+.bug_btn_02 {
+  width: 3.4rem;
+  position: absolute;
+  right: 1.4rem;
+  bottom: 1.4rem;
+  top: auto;
+}
+
+.bug_btn_03 {
+  width: 2rem;
+  position: absolute;
+  left: 29rem;
+  top: 26rem;
+  z-index: 100;
+}
+
+.bug {
+  text-align: center;
+  padding-bottom: 3.6rem;
+}
+.bug .ttl {
+  width: auto;
+  height: 4rem;
+}
+.bug .comment {
+  width: 33.5rem;
+  margin-top: 2rem;
+}
+.bug_01 .img {
+  margin-top: 2rem;
+  width: 33.6rem;
+}
+.bug_02 .img {
+  width: 37.4rem;
+  transform: rotate(6.6deg);
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.08);
+  margin-top: 2rem;
+}
+.bug_03 .img {
+  margin-top: 2rem;
+  width: 32.5rem;
+}
+
+footer {
+  position: relative;
+}
+footer .bug_btn {
+  width: 5.4rem;
+  position: absolute;
+  top: 2.1rem;
+  left: 11.1rem;
+}/*# sourceMappingURL=style.css.map */
