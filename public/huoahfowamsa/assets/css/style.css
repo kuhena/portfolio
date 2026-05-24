@@ -91,10 +91,10 @@ main {
   top: auto;
 }
 
-.bug_btn_03 {
+.bug_btn_01 {
   width: 2rem;
   position: absolute;
-  left: 29rem;
+  left: 33rem;
   top: 26rem;
   z-index: 100;
 }
